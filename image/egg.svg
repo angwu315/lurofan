@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.856" height="51.547" viewBox="0 0 40.856 51.547">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff5e3"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="0.5" cy="0.5" r="0.768" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffe67b"/>
+      <stop offset="1" stop-color="#ffcf07"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_181" data-name="Group 181" transform="translate(-200.524 -140)">
+    <path id="Path_152" data-name="Path 152" d="M19.762,0C30.8,0,36.793,12.1,39.749,25.773S35.155,51.706,19.762,51.545-1.847,38.794-.225,25.773,8.723,0,19.762,0Z" transform="translate(201 140)" fill="#b18d2d"/>
+    <path id="Path_153" data-name="Path 153" d="M19.5,0c10.9,0,16.812,11.939,19.73,25.441S34.7,51.041,19.5,50.882-1.829,38.294-.229,25.441,8.6,0,19.5,0Z" transform="translate(201.526 140.275)" fill="url(#radial-gradient)"/>
+    <ellipse id="Ellipse_15" data-name="Ellipse 15" cx="12" cy="11" rx="12" ry="11" transform="translate(209 161)" fill="url(#radial-gradient-2)"/>
+  </g>
+</svg>

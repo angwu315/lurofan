@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="59" viewBox="0 0 63 59">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_436" data-name="Rectangle 436" width="63" height="59" transform="translate(16 10)" fill="none" opacity="0.613"/>
+    </clipPath>
+    <filter id="Path_150" x="-1.135" y="15.949" width="56.258" height="42.157" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_13" x="12" y="24" width="30" height="19" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Mask_Group_145" data-name="Mask Group 145" transform="translate(-16 -10)" clip-path="url(#clip-path)">
+    <g id="Group_180" data-name="Group 180" transform="translate(19.365 27.449)">
+      <g transform="matrix(1, 0, 0, 1, -3.36, -17.45)" filter="url(#Path_150)">
+        <path id="Path_150-2" data-name="Path 150" d="M76.1-89.595c6.175-3.565,9.781-9.475,18.509-8.582s7.717,3.92,12.812,8.582,9.179,5.583,7.567,11.326-15.616,5.3-20.379,6.183-15.025,9.994-22.805,5.943S69.929-86.03,76.1-89.595Z" transform="translate(-64.73 115.72)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -3.36, -17.45)" filter="url(#Ellipse_13)">
+        <ellipse id="Ellipse_13-2" data-name="Ellipse 13" cx="12" cy="6.5" rx="12" ry="6.5" transform="translate(15 26)" fill="#ffde53"/>
+      </g>
+      <path id="Path_151" data-name="Path 151" d="M90.456-78.38c-1.566-2.4,2.235-.139,4.852,0s6.9-.952,5.616.556S92.022-75.976,90.456-78.38Z" transform="translate(-73.613 94.958)" fill="#f7eebc"/>
+    </g>
+    <text id="The" transform="matrix(0.839, -0.545, 0.545, 0.839, 25, 34)" fill="#fff" font-size="11" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">The</tspan></text>
+    <text id="Cook" transform="translate(39 67) rotate(-9)" fill="#fff" font-size="12" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">Cook</tspan></text>
+    <text id="Homesick" transform="matrix(0.719, 0.695, -0.695, 0.719, 41.893, 16.644)" fill="#fff" font-size="9" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">Homesick</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,416 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: rgb(255, 253, 250);
+}    
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.section-title {
+    color: black;
+}
+
+
+/* Component: Wrapper */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+a {
+    color: white;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrap {
+    height: 200px;
+    background-color: black;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: .2s ease-out;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.header ul a {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.header .logo {
+    float: left;
+    display: block;
+    padding: 10px 20px;
+}
+
+.header .menu {
+    position: absolute;
+    clear: both;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 30px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+    background: white;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+    opacity: 1;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    z-index: -1;
+    padding-top: 60%;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before { 
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+@media (min-width: 768px) {
+    
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu {
+        position: relative;
+        clear: none;
+        float: right;
+        max-height: none;
+        opacity: 1;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+
+}
+
+/* Component: hero */
+
+
+.hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./image/hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,.7);
+    background-blend-mode: darken;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.hero img {
+    height: 90px;
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        height: 50vh;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .hero img {
+        height: 120px;
+    }
+}
+/* Component: Origin */
+
+
+.origin {
+    position: relative;
+    background-color: rgb(247, 243, 237);
+    padding: 2rem 0;
+}
+
+.origin-container {
+    width: 80%;
+    margin: auto;
+    min-height: 8vh;
+}
+
+
+.origin img {
+    float: left;
+    height: 70px;
+    padding-right: 5px;
+}
+
+.origin-container > p {
+    line-height: 1.5em;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+
+    .origin-container > p {
+        font-size: small;
+    }
+}
+
+/* Component: Ingredients */
+
+
+.ingredients .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 0;
+}
+
+h2 {
+    font-size: 24px;
+    color: white;
+}
+
+.item {
+    padding: 5px;
+    width: 200px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.inline-b {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.inline-b-item {
+    display: inline-block;
+}
+
+p span {
+    font-size: small;
+    color: #afafaf;
+}
+
+@media (max-width: 300px) {
+    .item {
+        width: auto;
+    }
+    
+}
+
+
+/* Component: Cards */
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid > * {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+.card {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(145, 145, 145, 0.5);
+    margin-bottom: 30px;
+}
+
+.card-content {
+    padding: 12px 24px;
+    max-width: 90%;
+}
+
+.card-content h3 {
+    font-size: 1.3rem;
+}
+
+.card-content p {
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 150%;
+    font-size: 0.95rem;
+}
+
+li span {
+    font-size: small;
+    color: lightgray;
+    font-style: italic;
+    max-width: 90%;
+    word-break: break-all;
+}
+
+@media (min-width: 760px) {
+    .grid > * {
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+/* Component: Lowercontent */
+
+.lowercontent {
+    background-color: rgb(27, 30, 54);
+    padding: 24px;
+    display: flex;
+}
+
+.lowercontent h2 {
+    color: white;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight: 400;
+    padding: 0;
+    text-align: center;
+}
+
+.lowercontent img {
+    height: 70px;
+}
+
+.copyright {
+    color: lightgrey;
+    font-size: ;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Page: other dishes */
+
+.otherdishes {
+    background-color: rgb(27, 30, 54);
+}
+
+.video {
+  padding-top: 70px;  
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%; 
+    height: 0;
+    background-color: rgb(27, 30, 54);
+}
+
+  .iframe-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Page: More */
+
+.location {
+    padding-top: 70px;
+}
+
+.location ul {
+    margin-top: 50px;
+}
+
+.more {
+    background-color: rgb(27, 30, 54);
+}
+
+.map {
+    color: black;
+    text-decoration: none;
+}
+
+
